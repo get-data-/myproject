@@ -1,0 +1,38 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{{ title }} | Sample</title>
+<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.js"></script>
+  <style>
+        .navbar-default .navbar-brand {
+          display: flex;
+          align-items: center;
+          padding: 5px;
+        }
+        .navbar-brand img {
+          height: 250%;
+          margin-right: 20px;
+        }
+        .content {
+          width: 400px;
+          align-items: center;
+          padding: 20px;
+          overflow: hidden;
+        }
+        .content img {
+          margin-right: 15px;
+          float: left;
+        }
+</style>
+</head>
+<body>
+{% block navbar %}{% endblock %}
+</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</html>

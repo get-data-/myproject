@@ -1,0 +1,8 @@
+config.py
+myprojectenv/
+__pycache__/
+*.txt
+*.csv
+*.json
+*.log
+*.pyc
