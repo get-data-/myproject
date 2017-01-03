@@ -6,4 +6,4 @@ from flask import Flask
 application = Flask(__name__)
 
 
-import leads.views
+import sample.views
