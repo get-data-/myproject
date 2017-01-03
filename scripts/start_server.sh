@@ -21,7 +21,7 @@ systemctl enable myproject
 
 # Configuring Nginx to Proxy Requests
 SOCK_PATH="/home/ubuntu/myproject/myproject.sock"
-SERVER_IP=$(curl http://169.254.169.254/latest/meta-data-public-ipv4)
+SERVER_IP=$(curl http://169.254.169.254/latest/meta-data/public-ipv4)
 echo "server {
     listen 80;
     server_name $SERVER_IP;
