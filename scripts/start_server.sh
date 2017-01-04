@@ -17,8 +17,8 @@ ExecStart=/home/ubuntu/myproject/myprojectenv/bin/uwsgi --ini myproject.ini
 WantedBy=multi-user.target" > /etc/systemd/system/myproject.service
 
 # Start uWSGI service we created and enable it so that it starts at boot
-systemctl start myproject
-systemctl enable myproject
+sudo systemctl start myproject
+sudo systemctl enable myproject
 
 # Configuring Nginx to Proxy Requests
 SOCK_PATH="/home/ubuntu/myproject/myproject.sock"
