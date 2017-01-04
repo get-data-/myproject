@@ -10,6 +10,7 @@ User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/myproject
 Environment=\"PATH=/home/ubuntu/myproject/myprojectenv/bin\"
+PrivateTmp=false
 ExecStart=/home/ubuntu/myproject/myprojectenv/bin/uwsgi --ini myproject.ini
 
 [Install]
