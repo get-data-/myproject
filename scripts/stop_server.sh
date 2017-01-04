@@ -6,4 +6,6 @@ if [[ -n  \$isExistApp ]]; then
 fi  
 
 # Remove Previous Build
-rm -rf /home/ubuntu/myproject
+sudo rm -rf /home/ubuntu/myproject
+sudo rm /etc/systemd/system/myproject.service
+sudo rm /etc/nginx/sites-available/myproject
