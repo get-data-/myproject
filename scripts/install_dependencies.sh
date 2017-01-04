@@ -4,3 +4,4 @@
 sudo apt-get update -y
 sudo apt-get install python3-pip -y
 sudo apt-get install python3-dev -y
+sudo apt-get install nginx -y
