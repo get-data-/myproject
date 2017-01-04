@@ -1,3 +1,7 @@
 #!/bin/bash
 
-exit 0
+isExistApp=`pgrep nginx`
+if [[ -n  \$isExistApp ]]; then
+   service nginx stop
+fi  
+ 
