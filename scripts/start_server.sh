@@ -34,13 +34,11 @@ echo "server {
 }" > /etc/nginx/sites-available/myproject
 
 # Enable Nginx server block config - link the file to the sites-enabled directory
-ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
 
 # Restart the Nginx process to read the our new config
-sudo systemctl daemon-reload
 sudo systemctl restart nginx
 
 #Allow Access to Nginx Server
-ufw delete allow 5000
-ufw allow 'Nginx Full'
-
+sudo ufw delete allow 5000
+sudo ufw allow 'Nginx Full'
