@@ -37,7 +37,8 @@ echo "server {
 ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
 
 # Restart the Nginx process to read the our new config
-systemctl restart nginx
+sudo systemctl daemon-reload
+sudo systemctl restart nginx
 
 #Allow Access to Nginx Server
 ufw delete allow 5000
