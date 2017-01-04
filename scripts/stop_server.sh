@@ -9,3 +9,4 @@ fi
 sudo rm -rf /home/ubuntu/myproject
 sudo rm /etc/systemd/system/myproject.service
 sudo rm /etc/nginx/sites-available/myproject
+sudo rm /etc/nginx/sites-enabled/myproject
