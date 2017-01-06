@@ -12,3 +12,9 @@ cd /home/ubuntu/myproject
 sudo rm -rf scripts
 sudo rm -rf sample
 sudo rm -rf __pycache__
+
+timestamp() {
+  date +"%T"
+}
+
+echo "$timestamp: Cleaned Up Last Deployment" > codedeploy.log

@@ -9,3 +9,11 @@ virtualenv myprojectenv
 source myprojectenv/bin/activate
 pip install -r /home/ubuntu/myproject/requirements.txt
 
+
+timestamp() {
+  date +"%T"
+}
+
+echo "$timestamp: Virtualenv Installed" > codedeploy.log
+
+
