@@ -2,14 +2,13 @@
 
 import os
 
-base = '/home/ubuntu/myproject'
 
 with open('cleanup.txt', 'w') as  f:
-    for item in os.listdir(base):
+    for item in os.listdir('.'):
         if 'myproject.sock' in item:
             pass
         elif '.' in item:
-            fil = '%s/%s' % (base, item)
+            fil = '%s' % (item)
             f.write('%s\n' % fil)
         else:
             pass

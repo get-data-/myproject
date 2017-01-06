@@ -9,6 +9,6 @@ fi
 timestamp() {
   date +"%T"
 }
-
-echo "$timestamp: Stopped Server" > codedeploy.log
+FTIME = timestamp
+echo "$FTIME: Stopped Server" > codedeploy.log
 

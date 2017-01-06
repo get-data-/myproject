@@ -13,7 +13,7 @@ pip install -r /home/ubuntu/myproject/requirements.txt
 timestamp() {
   date +"%T"
 }
-
-echo "$timestamp: Virtualenv Installed" > codedeploy.log
+FTIME = timestamp
+echo "$FTIME: Virtualenv Installed" > codedeploy.log
 
 

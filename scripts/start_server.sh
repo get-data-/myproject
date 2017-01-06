@@ -46,6 +46,6 @@ sudo ufw allow 'Nginx Full'
 timestamp() {
   date +"%T"
 }
-
-echo "$timestamp: Server Started"  > codedeploy.log
+FTIME = timestamp
+echo "$FTIME: Server Started"  > codedeploy.log
 

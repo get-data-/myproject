@@ -9,6 +9,6 @@ sudo apt-get install nginx -y
 timestamp() {
   date +"%T"
 }
-
-echo "$timestamp: Installed Dependencies" > codedeploy.log
+FTIME = timestamp
+echo "$FTIME: Installed Dependencies" > codedeploy.log
 
