@@ -12,8 +12,4 @@ sudo rm -rf scripts
 sudo rm -rf sample
 sudo rm -rf __pycache__
 
-timestamp() {
-  date +"%T"
-}
-FTIME = timestamp
-echo "$FTIME: Cleaned Up Last Deployment" > codedeploy.log
+echo "Cleaned Up Last Deployment" >> codedeploy.log

@@ -6,9 +6,5 @@ sudo apt-get install python3-pip -y
 sudo apt-get install python3-dev -y
 sudo apt-get install nginx -y
 
-timestamp() {
-  date +"%T"
-}
-FTIME = timestamp
-echo "$FTIME: Installed Dependencies" > codedeploy.log
+echo "Installed Dependencies" >> codedeploy.log
 

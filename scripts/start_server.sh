@@ -43,9 +43,5 @@ sudo systemctl restart nginx
 sudo ufw delete allow 5000
 sudo ufw allow 'Nginx Full'
 
-timestamp() {
-  date +"%T"
-}
-FTIME = timestamp
-echo "$FTIME: Server Started"  > codedeploy.log
+echo "Server Started"  >> codedeploy.log
 
