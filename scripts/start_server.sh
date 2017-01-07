@@ -38,6 +38,7 @@ sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
 
 # Restart the Nginx process to read the our new config
 sudo systemctl restart nginx
+sudo systemctl restart myproject
 
 #Allow Access to Nginx Server
 sudo ufw delete allow 5000
